@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Labrador Retriever's Gallery</title>
+  </head>
+  <body>
+    <header>
+      Labrador Retriever's Gallery
+      <hr/>
+      <a href="galleryHome.html"><h2>Gallery Homepage</h2></a>
+      <!-- <nav style="h4">
+        <a href="Pug.html">Pug</a>
+        <a href="Pomeranian.html">Pomeranian</a>
+      </nav> -->
+      <div> <!-- block -->
+        <a href="Pug.html">Pug</a>
+      </div>
+      <div>
+        <span> <!-- inline -->
+          <a href="Pomeranian.html">Pomeranian</a>
+          <a href="Pug.html">Pug</a>
+        </span>
+      </div>
+    </header>
+    <body>
+      <br/>Baby Labrador (Click baby Labrador below to see more fun pictures)<br/>
+      <a href="https://www.akc.org/expert-advice/lifestyle/22-photos-of-labrador-retriever-puppies-to-brighten-your-day/"
+          target="_blank">
+        <img width="400" src="LabradorRetriever_Baby.jpg" alt="Baby Labrador">
+      </a>
+      <table> <!-- table -->
+        <thead> <!-- table header -->
+          <caption><h2 style="color: Blue">Puppy's Info</h2></caption><!-- table title-->
+          <tr> <!-- table row(row1) -->
+            <th>Name</th> <!-- table header(row1 column1) -->
+            <th>Color</th> <!-- table header(row1 column2) -->
+            <th>Character</th> <!-- table header(row1 column3) -->
+          </tr>
+        </thead>
+        <tbody> <!-- table body -->
+          <tr> <!-- row2-->
+            <td>Happy</td> <!-- row2 column1-->
+            <td>White</td> <!-- row2 column2-->
+            <td>Like playing with its tail</td> <!-- row2 column3 -->
+          </tr>
+        </tbody>
+      </table>
+      <hr/><hr/>
+      Adult Labrador<br/>
+      <img width="400" src="LabradorRetriever_Adult.jpg" alt="Adult Labrador">
+      <hr/><hr/>
+      Adorable Labrador Retriever Puppies<br/>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zNFNRdlop4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/>
+      <form>
+      <!-- attribute => action="index.html"(define the action to be performed when the form is submitted) -->
+        Sign in<br/>
+        <strong>ID</strong>: <input type="text" placeholder="Enter your student ID" required/><br/>
+        <strong>Password</strong>: <input type="password" placeholder="Enter your 4 digit pin" required/><br/>
+        Date: <input type="date"/><br/>
+        Your state:
+        <select name="states">
+          <!-- define drop down list-->
+          <!-- size(visible values at once)-->
+          <!-- multiple selection(allow user select more than one value)-->
+          <option value="disable" disabled selected>--select--</option>
+          <!-- selected(pre-selected value/default choice)-->
+          <option value="ca">CA</option>
+          <option value="co">CO</option>
+          <option value="ct">CT</option>
+          <option value="de">DE</option>
+          <option value="dc">DC</option>
+          <option value="fl">FL</option>
+          <option value="ga">GA</option>
+          <option value="gu">GU</option>
+          <option value="hi">HI</option>
+          <option value="id">ID</option>
+        </select><br>
+        Email: <input type="email" name="email" required/><br/>
+        Are you <em>male</em> or <em>female</em>?<br/>
+        <input name="gender" type="radio"/>male<input name="gender" type="radio"/>female<br/>
+        Which one(or both) do you like?<br/>
+        <input type="checkbox" name="babyL"/>baby Labrador<input type="checkbox" name="adultL"/>adult Labrador<br/>
+        Please pick a <mark><u>color</u></mark>: <input type="color" name="color"/><br>
+      </form>
+      <hr/>Want to upload any picture about your doggie?<br/>
+      <input type="file" name="doggiePicture"/><button type="button" name="uploadButton" onclick="alert('Successfully uploaded')">Upload</button><br/>
+<hr/>
+      Tell us more about your cutie doggie:<br>
+      <textarea name="name" rows="8" cols="50"></textarea>
+<hr/>
+      Message you want to send:<br/>
+      <textarea name="message"rows="8" cols="50"></textarea><br/>
+      <button type="button" name="submitButton" onclick="alert('Sent')">Submit</button>
+    </body>
+    <footer>
+      <p>Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
