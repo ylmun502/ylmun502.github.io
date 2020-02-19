@@ -1,5 +1,5 @@
 body {
-	background-color: black
+	background-color: black;
 }
 
 h1 {
@@ -8,9 +8,12 @@ h1 {
 }
 
 h3 {
-	color: Orange
+	color: Orange;
 }
 
 ul, ol, dl {
-	color: Yellow
+	color: Yellow;
 }
+
+nav {
+	vertical-align: baseline;
