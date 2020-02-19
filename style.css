@@ -1,3 +1,7 @@
+body {
+	background-color: black
+}
+
 h1 {
 	color: Gold;
 	text-align: center;
@@ -7,6 +11,6 @@ h3 {
 	color: Orange
 }
 
-ul {
+ul, ol, dl {
 	color: Yellow
 }
