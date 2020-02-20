@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="description" content="Submit the information of your dog">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="website devlopment, HTML, CSS">
+		<meta name="author" content="Mun">
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<header>
+			<t>** Provide Your Dog's Information **</t>
+			<hr>
+			<nav>
+				<div class="navAlign">
+					<ul class="listFormat">
+						<li>
+							<a href="galleryHome.html">Home</a>
+						</li>
+						<li>
+							<a class="navDropDown" href="javascript:void(0)" class="dropBtn">My Favorite</a>
+							<div class="dropDownContent">
+								<a href="LabradorRetriever.html">Labrador Retriever</a> <!-- clickable link -->
+								<a href="Pomeranian.html">Pomeranian</a>
+								<a href="Pug.html">Pug</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<hr>
+		</header>
+		<section>
+			<form class="formStyle">
+				<p>Complete the following boxes:</p>
+				<p><strong>Name</strong>: <input type="text" placeholder="Enter your name" required/><br/></p>
+				<p>Date: <input type="date"/><br/></p>
+				<p>Email: <input type="email" name="email" required/><br/></p>
+				<p>Are you <em>male</em> or <em>female</em>?<br/></p>
+				<p><input name="gender" type="radio"/>male<input name="gender" type="radio"/>female<br/></p>
+			</form>
+			<hr>
+			<p> Do you want to upload any picture about your doggie?<br/></p>
+			<input type="file" name="doggiePicture"/><button type="button" name="uploadButton" onclick="alert('Successfully uploaded')">Upload</button><br/>
+			<hr>
+			<p>Tell us more about your cutie doggie:<br></p>
+			<textarea name="name" rows="8" cols="50"></textarea>
+			<button type="button" name="submitButton" onclick="alert('Sent')">Submit</button>
+		</section>
+	</body>
+</html>

@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<link rel="stylesheet" type="text/css" href="https://ylmun502.github.io/style.css">
-	<meta charset="utf-8">
-	<meta name="description" content="This is a website for dog lover">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="website devlopment, HTML, CSS">
-	<meta name="author" content="Mun">
-    <title>Doggies picture</title>
-  </head>
-  <body>
-  <header>
-    <h1>** Welcome To Doggie's Gallery **</h1>
-    <hr/>
-    <!-- <a href="index.html" style="color: White"><h2>Homepage</h2></a> -->
-    <nav>
-      <a href="LabradorRetriever.html">LabradorRetriever</a> <!-- clickable link -->
-      <a href="Pug.html">Pug</a>
-      <a href="Pomeranian.html">Pomeranian</a>
-    </nav>
-  </header>
-  <body>
-    </br>
-    <h3>Type of dogs</h3>
-    <ul> <!-- unordered list-->
-      <li>Pug</li> <!-- list -->
-      <li>Beagle</li>
-      <li>Pomeranian</li>
-      <li>Alaskan Malamute</li>
-      <li>Labrador Retriever</li>
-      <li>American Eskimo Dog</li>
-    </ul>
-    <h3>Top 5 Fastest dog breeds:</h3>
-    <ol type="1" style="color: Yellow"> <!-- ordered list-->
-      <li>Greyhound</li>
-      <li>Saluki</li>
-      <li>Afghan Hound</li>
-      <li>Vizsla</li>
-      <li>German Shepherd</li>
-    </ol>
-    <h3>Lifespan of dogs</h3>
-    <dl class="type of dogs" style="color: Yellow"> <!-- description list-->
-      <dt>Pug:</dt> <!-- description term -->
-      <dd>- 12 to 15 years</dd> <!-- description of the term-->
-      <p><br/></p>
-	  <dt>Beagle:</dt>
-      <dd>- 12 to 15 years</dd>
-	  <p><br/><p>
-      <dt>Labrador Retriever:</dt>
-      <dd>- 10 to 14 years</dd>
-	  <p><br/><p/>
-    </dl>
-    <img width="600" src="https://assets3.thrillist.com/v1/image/2799859/size/tl-horizontal_main_2x.jpg" alt="Dogs">
-    </br></br>
-    <video loop controls width="400" src="test_video.mp4" poster="dogCover.jpg"></video>
-    <hr/><h3 style="color: Orange">World's Cutest Race</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/z2CvX2TD4eU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </body>
-  <footer>
-    <p style="color: White">Copyright &copy; 2019</p>
-  </footer>
-</body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="description" content="This is a website for dog lover">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="website devlopment, HTML, CSS">
+		<meta name="author" content="Mun">
+		<title>Doggies picture</title>
+	</head>
+	<body id="home">
+	<header>
+			<t>** Welcome To Doggie's Gallery **</t>
+			<hr>
+			<nav>
+				<div class="navAlign">
+					<ul class="listFormat">
+						<li>
+							<a href="galleryHome.html">Home</a>
+						</li>
+						<li>
+							<div class="navDropDown"> 
+								<button class="dropButton">My Favorite</button>
+								<div class="dropDownContent">
+									<a href="LabradorRetriever.html">LabradorRetriever</a> <!-- clickable link -->
+									<a href="Pug.html">Pug</a>
+									<a href="Pomeranian.html">Pomeranian</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="contactUs.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<hr>
+			<br/>
+			<center>
+				<img src="https://assets3.thrillist.com/v1/image/2799859/size/tl-horizontal_main_2x.jpg" alt="Dogs" width=100%>
+			</center>
+			<br/>
+			<hr>
+		</header>
+		<section>
+			<h1>Type of dogs:</h1>
+			<div id = "type">
+				<ul> <!-- unordered list-->
+					<li>Yorkshire Terrier</li> <!-- list -->
+					<li>Beagle</li>
+					<li>Papillon</li>
+					<li>Alaskan Malamute</li>
+					<li>Golden Retriever</li>
+					<li>American Eskimo Dog</li>
+				</ul>
+			</div>
+			<hr>
+			<h2>Top 5 Fastest dog breeds:</h2>
+			<div id="fastest">
+				<ol> <!-- ordered list-->
+					<li>Greyhound</li>
+					<li>Saluki</li>
+					<li>Afghan Hound</li>
+					<li>Vizsla</li>
+					<li>German Shepherd</li>
+				</ol>
+			</div>
+			<hr>
+			<h3>Lifespan of Some Dogs:</h3>
+			<div id="lifespan">
+				<dl> <!-- description list-->
+				  <dt>Pug:</dt> <!-- description term -->
+				  <dd>- 12 to 15 years</dd> <!-- description of the term-->
+				  <p><br/></p>
+				  <dt>Beagle:</dt>
+				  <dd>- 12 to 15 years</dd>
+				  <p><br/><p>
+				  <dt>Labrador Retriever:</dt>
+				  <dd>- 10 to 14 years</dd>
+				</dl>
+			</div>
+			<hr>
+			<aside>
+				<p class="footer">Dogs are human best friend! Let's us treat them as best as we can!</p>
+				<center>
+					<img src="dogCover.jpg" alt="Dog Cover">
+				</center>
+			</aside>
+			<br/>
+			<hr/><h1>World's Cutest Race</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/z2CvX2TD4eU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</body>
+		<footer class="footer">
+			<p>Copyright &copy; 2020</p>
+		</footer>
+	</section>
 </html>
-
-<!-- video autoplay doesn't work-->
