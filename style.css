@@ -53,6 +53,12 @@
 	display: block;
 }
 
+.mouseHover {
+	background-color: yellow;
+	width: 250px;
+	padding: 10px;
+}
+
 #home {
 	background-color: Black;
 }
