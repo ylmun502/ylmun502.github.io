@@ -60,6 +60,17 @@
 	text-align: center;
 }
 
+.ui-accordion-header.ui-state-active {
+	background-color: white;
+}
+
+.ui-accordion-header {
+	background-color: gray;
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+}
+
 #home {
 	background-color: Black;
 }
