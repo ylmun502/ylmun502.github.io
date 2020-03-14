@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="website devlopment, HTML, CSS">
 		<meta name="author" content="Mun">
+		<script src="jquery-3.4.1.js"></script>
+		<script src="jquery-ui.js"></script>
+		<script src="myJQuery.js"></script>
 		<title>Doggies picture</title>
 	</head>
 	<body id="home">
@@ -16,9 +19,6 @@
 			<nav>
 				<div class="navAlign">
 					<ul class="listFormat">
-						<li>
-							<a href="galleryHome.html">Home</a>
-						</li>
 						<li>
 							<div class="navDropDown"> 
 							<button class="dropButton">My Favorite</button>
@@ -44,9 +44,10 @@
 			<hr>
 		</header>
 		<section>
-			<div id="homeAccordian">
+			<h4>Interesting Facts About Dogs</h4>
+			<div id="homeAccordion">
 				<h1>Types of Dogs</h1>
-				<div>
+					<div>
 						<div id="type">
 							<ul> <!-- unordered list-->
 								<li>Yorkshire Terrier</li> <!-- list -->
@@ -57,7 +58,7 @@
 								<li>American Eskimo Dog</li>
 							</ul>
 						</div>
-				</div>
+					</div>
 				<h2>Top 5 Fastest Dog Breeds</h2>
 					<div>
 						<div id="fastest">
@@ -87,8 +88,36 @@
 					</div>
 			</div>
 			<hr>
+			<h4>Dog Information Calculator</h4>
+				<form class="formStyle">
+					Dog's Age in Human Years<br/><br/>
+					Enter Age: <input type="text" name="addAge" value=""/></br></br></br>
+					Calories Calculation<br/><br/>
+					Meals Per Day: <input type="text" id="numMeals" value="0"/>&emsp;
+					Calories Intake Per Meal: <input type="text" id="numCalories" value="0"/>&emsp;
+					Number of Days: <input type="text" id="numDays" value="0"/></br></br>
+					Total Amount of Calories: <input type="text" name="total" onclick="return calc();"/></br></br></br>
+					Check Out the List of Dog Breeds by Size</br></br>	
+					Enter small, medium, or large</br></br>
+					Dog Size: <input type="text" id="dogSize" name="dogSize"</input></br>
+					<input type="button" name="submit" id = "submit" value="Submit" onClick="sendAjaxRequest()"></br></br>
+					<div class="formStyle" id="result"></div></br>
+				</form>
+				<script>
+				function sendAjaxRequest() {
+					var xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200)
+						document.getElementById("result").innerHTML = xhttp.responseText;
+					};
+					var url = "createBackendContent.php?name=" + document.getElementById("dogSize").value;
+					xhttp.open("GET", url, true);
+					xhttp.send();
+				}
+				</script>
+			<hr>
 			<aside>
-				<p class="footer">Dogs are human best friend! Let's us treat them as best as we can!</p>
+				<h5 class="footer">Dogs are human best friend! Let's us treat them as best as we can!</h5>
 				<center>
 					<img src="dogCover.jpg" alt="Dog Cover">
 				</center>
@@ -97,17 +126,9 @@
 			<hr/>
 			<h1>World's Cutest Race</h1>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/z2CvX2TD4eU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<script src="jquery-3.4.1.js"></script>
-			<script src="jquery-ui.js"></script>
-			<script src="myJQuery.js"></script>
-			<script>
-				$(document).ready(function() {
-					$("#homeAccordian").accordion();
-				});
-			</script>
-		</body>
+		</section>
 		<footer class="footer">
 			<p>Copyright &copy; 2020</p>
 		</footer>
-	</section>
+	</body>
 </html>

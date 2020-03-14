@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="website devlopment, HTML, CSS">
 		<meta name="author" content="Mun">
+		<script src="jquery-3.4.1.js"></script>
+		<script src="jquery-ui.js"></script>
+		<script src="myJQuery.js"></script>
 		<title>Contact Us</title>
 	</head>
 	<body>
@@ -35,15 +38,16 @@
 		<section>
 			<form class="formStyle">
 				<p>Complete the following boxes:</p>
-				<p><strong>Name</strong>: <input type="text" placeholder="Enter your name" required/><br/></p>
-				<p>Date: <input type="date"/><br/></p>
-				<p>Email: <input type="email" name="email" required/><br/></p>
+				<p><strong>Name</strong>: <input type="text" placeholder="Enter your name" required><br/></p>
+				<p>Date: <input type="text" id="datePicker" required><br/></p>
+				<p>Email: <input type="email" name="email" placeholder="Enter your email" required><br/></p>
 				<p>Are you <em>male</em> or <em>female</em>?<br/></p>
-				<p><input name="gender" type="radio"/>male<input name="gender" type="radio"/>female<br/></p>
+				<p><input name="gender" type="radio">male<input name="gender" type="radio">female<br/></p>
+				<input type="submit" value="Submit">
 			</form>
 			<hr>
 			<p> Do you want to upload any picture about your doggie?<br/></p>
-			<input type="file" name="doggiePicture"/><button type="button" name="uploadButton" onclick="alert('Successfully uploaded')">Upload</button><br/>
+			<input type="file" name="doggiePicture"><button type="button" name="uploadButton" onclick="alert('Successfully Uploaded')">Upload</button><br/>
 			<hr>
 			<p>Tell us more about your cutie doggie:<br></p>
 			<textarea name="name" rows="8" cols="50"></textarea>

@@ -1,0 +1,11 @@
+<u>Large Dog Breeds</u><br/>
+1. Dalmatian<br/>
+2. Chow Chow<br/>
+3. Spoodle<br/>
+4. Irish Terrier<br/>
+5. Beagle<br/>
+6. Schnauzer<br/>
+7. Shar Pei<br/>
+8. Border Collie<br/>
+9. Australian Kelpie<br/>
+10. Bull Terrier<br/>

@@ -20,7 +20,7 @@
 .navDropDown .dropButton {
 	border: none;
 	outline: none;
-	color: black;
+	color: Black;
 	margin: 0;
 	background-color: inherit;
 	font-family: inherit;
@@ -31,7 +31,7 @@
 .dropDownContent {
 	display: none;
 	position: absolute;
-	background-color: White;
+	background-color: Lavender;
 }
 
 .listFormat {
@@ -54,21 +54,26 @@
 }
 
 .mouseHover {
-	background-color: yellow;
+	background-color: Yellow;
 	width: 250px;
 	padding: 10px;
 	text-align: center;
 }
 
 .ui-accordion-header.ui-state-active {
-	background-color: white;
+	background-color: White;
 }
 
 .ui-accordion-header {
-	background-color: gray;
+	background-color: Lightslategray;
 	width: 250px;
 	padding: 10px;
 	text-align: center;
+}
+
+.ui-datepicker {
+	background: Yellow;
+	color: Blue;
 }
 
 #home {
@@ -81,6 +86,10 @@ t {
 	color: Gold;
 	text-align: center;
 	font-size: 50px;
+}
+
+p {
+	color: Green;
 }
 
 h1 {
@@ -96,6 +105,12 @@ h2 {
 h3 {
 	color: DarkBlue;
 	font-size: 25px;
+}
+
+h4 {
+	color: white;
+	font-size: 30px;
+	text-decoration: underline;
 }
 
 #type {
@@ -116,5 +131,6 @@ h3 {
 
 .footer {
 	color: #0048BA;
+	font-size: 20px;
 	text-align: center;
 }

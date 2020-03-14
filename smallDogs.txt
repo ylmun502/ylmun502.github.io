@@ -1,0 +1,11 @@
+<u>Small Dog Breeds</u><br/>
+1. Chihuahua<br/>
+2. Bichon Frise<br/>
+3. Havanese<br/>
+4. Lhasa Apso<br/>
+5. Yorkshire Terrier<br/>
+6. Papillon<br/>
+7. Japanese Chin<br/>
+8. Pug<br/>
+9. Pomeranian<br/>
+10. Shiba Inu<br/>

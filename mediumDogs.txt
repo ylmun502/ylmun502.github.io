@@ -1,0 +1,11 @@
+<u>Medium Dog Breeds</u><br/>
+1. Akita<br/>
+2. German Shepherd<br/>
+3. Golden Retriever<br/>
+4. Rottweiler<br/>
+5. Labrador Retriever<br/>
+6. Great Dane<br/>
+7. Greyhound<br/>
+8. Siberian Husky<br/>
+9. Samoyed<br/>
+10. Alaskan Malamute<br/>
